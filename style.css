@@ -1,0 +1,134 @@
+/* by Kevin Giron */
+body {
+  background-color: #2F4050;
+  }
+
+  .choice { /* bull or bear consensus */
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 30px;
+      padding: 12px 20px;
+  }
+  #images{
+      text-align:center;
+  }
+  .choice {
+    transition: all .2s ease-in-out;
+  }
+.choice:hover{
+  transform: scale(1.1);
+}
+  .center {  /* chart center */
+    display: block;
+    margin: auto;
+    width: 45%;
+    padding: 12px 20px;
+}
+.centerChart {  /* chart center */
+  display: block;
+  margin: auto;
+  width: 60%;
+  padding: 12px 20px;
+}
+
+
+
+
+
+
+
+
+div.wrong{
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 160%;
+
+}
+h2.par{
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1AB394;
+  font-size: 300%;
+}
+span.style{
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1AB394;
+  font-size: 160%;
+
+}
+
+
+p.par{
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1AB394;
+  font-size: 160%;
+}
+h1.title {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1AB394;
+  font-size: 300%;
+}
+.button {
+  border-radius: 8px;
+  background-color: #293846;
+  border: none;
+  color: #1AB394;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  margin:auto;
+  display:block;
+ /*button referenced from csstricks.com */
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\279c'; /* unicode here */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+body {
+  margin: 50px;
+
+}
+
+
+
+input[type=text] {
+
+    width: 20%;
+    padding: 12px 20px;
+    margin:auto;
+    display:block;
+    margin-bottom: 20px;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
