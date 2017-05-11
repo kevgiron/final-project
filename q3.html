@@ -22,12 +22,15 @@
           <p class="par">Choose your consensus rating</p>
             <div id="images">
             <form class="choice" action="results.html">
-              <input type="image" src="bear.png" alt="Submit" width="150" height="150">
+              <input type="image" oninput="valThree();" id="input" src="bear.png" alt="Submit" width="150" height="150" onclick="checkThree();">
             </form>
             <form class="choice" action="results.html">
-              <input type="image" src="bull.png" alt="Submit" width="150" height="150">
+              <input type="image" oninput="valThree();" id="input" src="bull.png" alt="Submit" width="150" height="150" onclick="checkThree();">
             </form>
           </div>
+          <footer class="credit">Created by Kevin Giron.
+          Chart data provided by Yahoo Finance, Bull and bear icons provided by scutify.com
+          </footer>
 
 
   </body>

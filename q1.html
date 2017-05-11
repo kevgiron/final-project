@@ -12,7 +12,6 @@
     <h1 class="title">Apple Inc. NASDAQ: AAPL </h1>
 
 
-
     <div class="centerChart">
     <img src="http://chart.finance.yahoo.com/z?s=AAPL&t=3m&q=l&l=on&z=l&p=m50,e200,v"/>
 
@@ -27,16 +26,19 @@
 
   <div id="images">
   <form class="choice" action="q2.html">
-    <input type="image" src="bear.png" alt="Submit" width="150" height="150">
+    <input type="image" oninput="valOne();" id="input" src="bear.png" alt="Submit" width="150" height="150" onclick="checkOne();">
+
   </form>
   <form class="choice" action="q2.html">
-    <input type="image" src="bull.png" alt="Submit" width="150" height="150">
-  </form>
+    <input type="image" oninput="valOne();" id="input" src="bull.png" alt="Submit" width="150" height="150" onclick="checkOne();">
+ </form>
 </div>
+<footer class="credit">Created by Kevin Giron.
+Chart data provided by Yahoo Finance, Bull and bear icons provided by scutify.com
+</footer>
 
 
-  <div class="wrong">
-  <p id="error" style="color:red"></p>
-</div>
+
+
 </body>
 </html>

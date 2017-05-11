@@ -1,7 +1,12 @@
 //by Kevin Giron
+
+var prices =[161,330,16];
+
+
 function checkOne()
 {
   var qAnswer = document.getElementById("input").value;
+  
   if(qAnswer != 161)
   {
     var qOne = 0;
@@ -70,7 +75,7 @@ function valTwo()
 function checkThree()
 {
   var qAnswer = document.getElementById("input").value;
-  if(qAnswer != 168)
+  if(qAnswer != 16)
   {
     var qThree = 0;
     document.cookie = ("q3check=" + qThree);
@@ -90,7 +95,7 @@ function checkThree()
 function valThree()
 {
   var checkInput = document.getElementById("input").value;
-  if(checkInput.toLowerCase() <= 16)
+  if(checkInput.toLowerCase() <= 15)
   {
   document.getElementById("error").style.color = "red";
   document.getElementById("error").innerHTML = 'Valeant Pharmaceuticals is forcast to have a price greater than $15';
@@ -110,29 +115,29 @@ function calculateScore()
   var score = qOne + qTwo + qThree;
   if(qOne == 1)
   {
-  document.getElementById("t1").innerHTML = '22 is the correct answer!';
+  document.getElementById("t1").innerHTML = '$161 is the correct target price!';
   }
   else
   {
-    document.getElementById("t1").innerHTML = 'Sorry the right answer was 22';
+    document.getElementById("t1").innerHTML = 'Analysts peg the target price at $161';
   }
   if(qTwo == 1)
   {
-    document.getElementById("t2").innerHTML = '458330 is the correct answer!';
+    document.getElementById("t2").innerHTML = '$330 is the correct Price!';
   }
   else {
 
-    document.getElementById("t2").innerHTML = 'Sorry the right answer was 458330';
+    document.getElementById("t2").innerHTML = 'Analysts set the target price at $330';
   }
   if(qThree == 1)
   {
-    document.getElementById("t3").innerHTML = '168 is the correct answer!';
+    document.getElementById("t3").innerHTML = '$16 is the correct price!';
   }
   else
   {
-    document.getElementById("t3").innerHTML = 'Sorry the right answer was 168 to solve subtract 4 then multiply each number by 3 to give the next number';
+    document.getElementById("t3").innerHTML = 'Analysts set the target price at $16 ';
   }
-    document.getElementById("score").innerHTML = 'You got ' + score + ' out of 3 correct!';
+    document.getElementById("score").innerHTML = 'You got ' + score + '  ratings out of 3 correct!';
 }
 
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
