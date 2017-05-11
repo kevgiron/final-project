@@ -13,6 +13,13 @@
     <div class="centerChart">
     <img src="http://chart.finance.yahoo.com/z?s=TSLA&t=3m&q=l&l=on&z=l&p=m50,e200,v"/>
     </div>
+    <p class="par">Set your target price for the next few months, Tesla stock has been hovering at around $320</p>
+
+  <input type="text" oninput="valTwo();" id="input">
+          <div class="wrong">
+          <p id="error" style="color:red"></p>
+        </div>
+  <p class="par">Choose your consensus rating</p>
     <div id="images">
     <form class="choice" action="q3.html">
       <input type="image" src="bear.png" alt="Submit" width="150" height="150">
@@ -22,15 +29,6 @@
     </form>
   </div>
 
-    <p class="par">Find the missing number</p>
 
-  <input type="text" oninput="valTwo();" id="input">
-          <button class="button" type="button" onclick="checkTwo();">
-          Answer!
-          </button>
-          <div class="wrong">
-          <p id="error" style="color:red"></p>
-        </div>
-  </body>
-
+</body>
 </html>

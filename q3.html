@@ -8,16 +8,25 @@
   <script type="text/javascript" src="stock.js"></script>
 </head>
   <body>
-    <h1 class="title">Advanced Micro Devices NASDAQ: AMD </h1>
-    <img src="http://chart.finance.yahoo.com/z?s=AMD&t=3m&q=l&l=on&z=l&p=m50,e200,v"/>
+    <h1 class="title">Valeant Pharmaceuticals International, Inc. NYSE: VRX </h1>
+    <div class="centerChart">
+    <img src="http://chart.finance.yahoo.com/z?s=VRX&t=3m&q=l&l=on&z=l&p=m50,e200,v"/>
+    </div>
 
 
+    <p class="par">Set your target price, Valeant Pharmaceuticals stock has been hovering at around $12, down greatly from its $119 price a year ago! </p>
     <input type="text" oninput="valThree();" id="input">
-            <button class="button" type="button" onclick="checkThree();">
-            Finish!
-            </button>
             <div class="wrong">
             <p id="error" style="color:red"></p>
+          </div>
+          <p class="par">Choose your consensus rating</p>
+            <div id="images">
+            <form class="choice" action="results.html">
+              <input type="image" src="bear.png" alt="Submit" width="150" height="150">
+            </form>
+            <form class="choice" action="results.html">
+              <input type="image" src="bull.png" alt="Submit" width="150" height="150">
+            </form>
           </div>
 
 

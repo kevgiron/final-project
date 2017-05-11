@@ -1,31 +1,8 @@
 //by Kevin Giron
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function checkOne()
 {
   var qAnswer = document.getElementById("input").value;
-  if(qAnswer != 22)
+  if(qAnswer != 161)
   {
     var qOne = 0;
     document.cookie = ("q1check=" + qOne);
@@ -43,21 +20,24 @@ function checkOne()
 function valOne()
 {
   var checkInput = document.getElementById("input").value;
-  if(checkInput.toLowerCase() != 22)
+  if(checkInput.toLowerCase() <= 153)
   {
   document.getElementById("error").style.color = "red";
-  document.getElementById("error").innerHTML = 'Hint the number is greater than 20';
+  document.getElementById("error").innerHTML = 'Hint the price target is greater than $153';
 
   }
-  else{
+  else if(checkInput.toLowerCase() >= 158)
+  {
     document.getElementById("error").style.color = "DarkGreen ";
-    document.getElementById("error").innerHTML = 'Correct answer';
+  document.getElementById("error").innerHTML = 'Analysts price Apple stock valuation at around this price!';
   }
+
+
 }
 function checkTwo()
 {
   var qAnswer = document.getElementById("input").value;
-  if(qAnswer != 458330)
+  if(qAnswer != 330)
   {
     var qTwo = 0;
     document.cookie = ("q2check=" + qTwo);
@@ -75,15 +55,15 @@ function checkTwo()
 function valTwo()
 {
   var checkInput = document.getElementById("input").value;
-  if(checkInput.toLowerCase() != 458330)
+  if(checkInput.toLowerCase() <= 300)
   {
   document.getElementById("error").style.color = "red";
-  document.getElementById("error").innerHTML = 'Incorrect answer';
+  document.getElementById("error").innerHTML = 'Hint the price target is greater than $320';
   }
-  else
+  else if (checkInput.toLowerCase() >= 330)
   {
     document.getElementById("error").style.color = "DarkGreen ";
-    document.getElementById("error").innerHTML = 'Correct answer';
+    document.getElementById("error").innerHTML = 'Analysts price Tesla stock valuation at around this price!';
   }
 }
 
@@ -110,14 +90,14 @@ function checkThree()
 function valThree()
 {
   var checkInput = document.getElementById("input").value;
-  if(checkInput.toLowerCase() != 168)
+  if(checkInput.toLowerCase() <= 16)
   {
   document.getElementById("error").style.color = "red";
-  document.getElementById("error").innerHTML = 'Incorrect answer';
+  document.getElementById("error").innerHTML = 'Valeant Pharmaceuticals is forcast to have a price greater than $15';
   }
   else{
     document.getElementById("error").style.color = "DarkGreen ";
-    document.getElementById("error").innerHTML = 'Correct answer';
+    document.getElementById("error").innerHTML = 'Analysts price Valeant stock at around this price!';
   }
 }
 
